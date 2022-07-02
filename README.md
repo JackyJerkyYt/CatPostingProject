@@ -1,4 +1,4 @@
-# CatPostingProject - Post Your Cute Cats!
+# CatPostingProject (Full Stack MERN) - Post Your Cute Cats!
 
 
 ## What is Post Your Cute Cats

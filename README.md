@@ -26,13 +26,13 @@ Post Your Cute Cats! is a social media application where users can post their cu
   -add a ranking mechanism, where people can like the post and the post that have the highest likes will be presented first
  
 ## Demo Website
--https://obscure-beach-63000.herokuapp.com/
+- https://obscure-beach-63000.herokuapp.com/
 ps: the web take a while to load and it also needs some time for the images to pop up
 
 ## Take aways
--I learned to code in full stack (MERN)
--I learned how to connect front-end and back-end togther
--I learned to deployed the web app online
+- I learned to code in full stack (MERN)
+- I learned how to connect front-end and back-end togther
+- I learned to deployed the web app online
   -When I tried to deploy this app to heroku, a lot of bugs happen, and it takes me days to figure out and take care of them, here are the following bugs and how I take care of them:
     1. Cannot push the app to heroku
       -Delete you node modules and install them again, most likely the modemodules are corrupted

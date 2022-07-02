@@ -2,7 +2,7 @@
 
 
 ## What is Post Your Cute Cats
-Post Your Cute Cats! is a social media application where users can post their cute cats. They will get to see other people's cute cats pictures and just enjoy the cuteness of cats.
+"Post Your Cute Cats!" is a social media application where users can post their cute cats. They will get to see other people's cute cats pictures and enjoy the cuteness of cats.
 
 
 ## How to run the app
@@ -36,10 +36,10 @@ ps: the web take a while to load and it also needs some time for the images to p
 - I learned how to use GFS
   - When I tried to deploy this app to heroku, a lot of bugs happen, and it takes me days to figure out and take care of them, here are the following bugs and how I take care of them:
     1. Cannot push the app to heroku:  
-      - Delete you node modules and install them again, most likely the modemodules are corrupted
-      - Delete your .git and re install them
-      - SPECIFY THE ENGINES!! specifiy the version of the node in you package.json
+      - Delete you node modules and install them again, most likely the mode modules are corrupted
+      - Delete your .git and reinstall them
+      - SPECIFY THE ENGINES!! Specifiy the version of the node in you package.json
     2. The deloyed app could not connect to the backend:
-      - this is unfortunately one of the things that I still cannot fix, the app works perfectly in localhost but when deployed to heroku it only either connects to backend or frontend. I ended up creating another heroku that links to the backend and have my frontend heroku fetch database from the backend heroku. This is not a good solution, but this is what I have so far.
+      - This is unfortunately one of the things that I still cannot fix, the app works perfectly in localhost but when deployed to heroku it only either connects to backend or frontend. I ended up creating another heroku that links to the backend and have my frontend heroku fetch database from the backend heroku. This is not a good solution, but this is what I have so far.
 
 

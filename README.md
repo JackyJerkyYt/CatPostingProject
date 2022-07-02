@@ -29,7 +29,7 @@ Post Your Cute Cats! is a social media application where users can post their cu
 -https://obscure-beach-63000.herokuapp.com/
 ps: the web take a while to load and it also needs some time for the images to pop up
 
-##Take aways
+## Take aways
 -I learned to code in full stack (MERN)
 -I learned how to connect front-end and back-end togther
 -I learned to deployed the web app online

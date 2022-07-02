@@ -34,7 +34,8 @@ ps: the web take a while to load and it also needs some time for the images to p
 - I learned how to connect front-end and back-end togther
 - I learned to deployed the web app online
   - When I tried to deploy this app to heroku, a lot of bugs happen, and it takes me days to figure out and take care of them, here are the following bugs and how I take care of them:
-    1. Cannot push the app to heroku
+    1. Cannot push the app to heroku  
+      2. 
       - Delete you node modules and install them again, most likely the modemodules are corrupted
       - Delete your .git and re install them
       - SPECIFY THE ENGINES!! specifiy the version of the node in you package.json

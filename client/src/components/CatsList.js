@@ -12,7 +12,7 @@ const CatsList = () => {
     useEffect(() => {
         axios.get('http://localhost:8080')
         .then(response => {
-           setListOfCats([...response.data])
+           setListOfCats([...response.data].reverse())
         })
         .catch(error => {
             console.log(error)

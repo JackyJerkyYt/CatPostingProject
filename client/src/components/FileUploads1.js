@@ -1,12 +1,13 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import Message from './Message';
 import axios from 'axios';
 
-const FileUpload = () => {
+const FileUpload = ({disableButton}) => {
   const [file, setFile] = useState('');
   const [filename, setFilename] = useState('Choose File');
   const [uploadedFile, setUploadedFile] = useState({});
   const [message, setMessage] = useState('');
+  const [messageOfUpload, setMessageOfUpload] = useState('Server Still Loading. This may take 5-10 seconds')
 
   const onChange = e => {
     setFile(e.target.files[0]);
@@ -19,7 +20,7 @@ const FileUpload = () => {
     formData.append('file', file);
 
     try {
-      const res = await axios.post('/upload', formData, {
+      const res = await axios.post('https://honest-eh-59020.herokuapp.com/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         },
@@ -42,10 +43,18 @@ const FileUpload = () => {
     }
   };
 
+  useEffect(() => {
+    if(disableButton){
+      setMessageOfUpload('Server Still Loading. This may take 5-10 seconds')
+    }else{
+      setMessageOfUpload('Upload')
+    }
+  }, [disableButton])
+
   return (
     <Fragment>
       {message ? <Message msg={message} /> : null}
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} disabled={disableButton}>
         <div className='custom-file mb-4'>
           <input
             type='file'
@@ -60,7 +69,7 @@ const FileUpload = () => {
 
         <input
           type='submit'
-          value='Upload'
+          value={messageOfUpload}
           className='btn btn-primary btn-block mt-4'
         />
 

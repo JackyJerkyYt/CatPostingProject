@@ -16,9 +16,11 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(methodOverride('_method'));
+app.set('view engine', 'jade');
 
 // Mongo URI
-const mongoURI = 'mongodb+srv://Jacky:Testing1234@cluster0.qw0jjqo.mongodb.net/?retryWrites=true&w=majority';
+// const mongoURI = 'mongodb+srv://Jacky:Testing1234@cluster0.qw0jjqo.mongodb.net/?retryWrites=true&w=majority';
+const mongoURI = 'mongodb+srv://Jacky:Test1234@cluster0.qpcwmuo.mongodb.net/?retryWrites=true&w=majority'
 
 const conn = mongoose.createConnection(mongoURI,  {useNewUrlParser: true , useUnifiedTopology: true});
 

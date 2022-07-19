@@ -33,7 +33,7 @@ function App() {
       Post Your Cute Cats!
     </h4>
     <FileUpload disableButton={disableButton}/>
-    <CatsList />
+    <CatsList listOfCats={listOfCats}/>
   </div>
   );
 }

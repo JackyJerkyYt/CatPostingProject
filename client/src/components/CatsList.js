@@ -5,19 +5,7 @@ import Card from "react-bootstrap/Card";
 import { useNavigate } from "react-router-dom";
 
 
-const CatsList = () => {
-
-    const [listOfCats, setListOfCats] = useState([])
-
-    useEffect(() => {
-        axios.get('http://localhost:8080')
-        .then(response => {
-           setListOfCats([...response.data].reverse())
-        })
-        .catch(error => {
-            console.log(error)
-        })
-    })
+const CatsList = ({listOfCats}) => {
 
     return(
         <div>
